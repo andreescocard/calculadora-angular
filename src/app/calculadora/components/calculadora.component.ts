@@ -9,6 +9,11 @@ import { CalculadoraService } from '../services';
 })
 export class CalculadoraComponent implements OnInit {
 
+  private numero1: string;
+  private numero2: string;
+  private resultado: number;
+  private operacao: string;
+
   constructor(private calculadoraService: CalculadoraService) { }
 
   ngOnInit(): void {
